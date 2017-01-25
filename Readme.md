@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Ирина Макарова](https://up.htmlacademy.ru/htmlcss/16/user/184704).
-* Наставник: [Максим Протасов](https://htmlacademy.ru/profile/id209392).
+* Студент:[Ирина Макарова](https://up.htmlacademy.ru/htmlcss/16/user/184704).
+* Наставник:[Максим Протасов](https://htmlacademy.ru/profile/id209392).
 
 ---
 

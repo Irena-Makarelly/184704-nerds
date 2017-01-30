@@ -1,130 +1,195 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-      
-<!-- шапка -->
-    <header class="main-header">
-        <div class="logo">
-           <a href="#"><img src="http://placehold.it/150x100" alt="nerds" width="" height=""></a>
+    <head>
+        <meta charset="utf-8">
+            <title>HTML Academy: Нёрдс</title>
+    </head>
+    <body>
+
+    <header class="header">
+        <div class="header-logo">
+            <a href="#"><img src="http://placehold.it/150x100" alt="nerds" width="" height=""></a>
         </div>
-        <nav class="main-navigation">
-            <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
+        <nav class="header-navigation">
+            <ul class="header-navigation-list">
+                <li class="header-navigation-item">
+                    <a class="header-navigation-link" href="#">Студия</a>
+                </li>
+                <li class="header-navigation-item">
+                    <a class="header-navigation-link" href="#">Клиенты</a>
+                </li>
+                <li class="header-navigation-item">
+                    <a class="header-navigation-link" href="#">Магазин</a>
+                </li>
+                <li  class="header-navigation-item">
+                    <a class="header-navigation-link" href="#">Контакты</a>
+                </li>
             </ul>
-            <a href="#">Корзина</a>
-        </nav>  
-        <h1>Магазин готовых шаблонов</h1>
+        <div class="user-block">
+            <a class="user-block-basket" href="#">Корзина</a>
+        </div>
+        </nav>
+        <div class="header-catalog-title">
+            <h1>Магазин готовых шаблонов</h1>
+        </div>
     </header>
-      
-<!-- не понимаю как делать блоки "стоимость-сортировать-по цене" строкой или привязывать к блоку? -->
-<h3>Стоимость:</h3> 
 
-<!-- блок движок выбора стоимости (не понимаю как делать)-->
-      <div class="price">
-                    <h3>Стоимость</h3>
-                    0 <input type="range" id="dayscount" name="dayscount" min="0" max="15000" step="1"> 15000
+    <main class="container">
+        <section class="choice">
+            <form action="#" method="get">
+
+                <div class="price">
+                    <h3 class="price-cursor">Стоимость</h3>
+                        <div>
+                            <div height="1px">
+                            </div>
+                        </div>
                 </div>
-      
-      
 
-     <div>
-<!-- блок формы-1 -->
-      <section class="grid">
-          <h3>Сетка:</h3>
-            <ul>
-            <li><input type="checkbox" name="grid" id="adaptive" checked>
-            <label for="adaptive">Адаптивная</label>
-            </li>
-            <li><input type="checkbox" name="grid" id="fix">
-            <label for="fix">Фиксированная</label>
-            </li>
-            <li><input type="checkbox" name="grid" id="elastic">
-            <label for="elastic">Резиновая</label>
-            </li>
-            </ul>
-       </section>
-      
-<!-- блок формы-2 -->
-       <section class="features">
-           <h3>Особенности:</h3>
-            <ul>
-            <li><input type="checkbox" name="features" id="slider" checked>
-            <label for="slider">Слайдер</label>
-            </li>
-            <li><input type="checkbox" name="features" id="block-of-benefits">
-            <label for="block-of-benefits">Блок преимуществ</label>
-            </li>
-            <li><input type="checkbox" name="features" id="news" checked>
-            <label for="news">Новости</label>
-            </li>
-            <li><input type="checkbox" name="" id="gallery">
-            <label for="gallery">Галерея</label>
-            </li>
-            <li><input type="checkbox" name="features" id="busket">
-            <label for="busket">Корзина</label>
-            </li>
-            </ul>
-      </section> 
-      <a class="btn" href="#">Показать</a>
-      </div> 
-      
-<!-- блок картинок сайтов -->
-      <div>
-          <img src="http://placehold.it/150x100" alt="sedona" width="" height="">
-          <img src="http://placehold.it/150x100" alt="pink" width="" height="">
-          <img src="http://placehold.it/150x100" alt="borodinski" width="" height="">
-          <img src="http://placehold.it/150x100" alt="mishka" width="" height="">
-          <img src="http://placehold.it/150x100" alt="?" width="" height="">
-          <img src="http://placehold.it/150x100" alt="kvast" width="" height="">
+                <div class="grid">
+                    <h3 class="grid-subtitle">Сетка:</h3>
+                        <div class="grid-item-adaptive">
+                            <input type="radio" name="grid" value="adaptive" checked>
+                            <label for="adaptive">Адаптивная</label>
+                        </div>
+                        <div class="grid-item-fix">
+                            <input type="radio" name="grid" value="fix">
+                            <label for="fix">Фиксированная</label>
+                        </div>
+                        <div class="grid-item-elastic">
+                            <input type="radio" name="grid" value="elastic">
+                            <label for="elastic">Резиновая</label>
+                        </div>
+                </div>
+
+                <div class="features">
+                    <h3 class="features-subtitle">Особенности:</h3>
+                        <div class="features-item-slider">
+                            <input type="checkbox" name="features"  value="slider" id="slider" checked>
+                            <label for="slider">Слайдер</label>
+                        </div>
+                        <div class="features-item-block-benefits">
+                            <input type="checkbox" name="features" value="block-benefits" id="block-benefits">
+                            <label for="block-benefits">Блок преимуществ</label>
+                        </div>
+                        <div class="features-item-news">
+                            <input type="checkbox" name="features" value="news" id="news" checked>
+                            <label for="news">Новости</label>
+                        </div>
+                        <div class="features-item-gallery">
+                            <input type="checkbox" name="features" value="gallery" id="gallery">
+                            <label for="gallery">Галерея</label>
+                        </div>
+                        <div class="features-item-basket">
+                            <input type="checkbox" name="features" value="basket" id="basket">
+                            <label for="basket">Корзина</label>
+                        </div>
+                        <div class="features-button">
+                            <input type="submit " value="Показать">
+                        </div>
+                </div>
+            </form>
+        </section>
+
+          <section class="sort">
+              <ul class="sort-list">Сортировать
+                  <li class="sort-list-item">По цене</li>
+                  <li class="sort-list-item">По типу</li>
+                  <li class="sort-list-item">По названию</li>
+              </ul>
+          </section>
+
+
+          <section class="version-of-sites">
+              <article class="version-of-sites">
+                  <div class="version-of-sites-slider-top">
+                  </div>
+                      <div class="version-of-sites-sedona-img">
+                          <img src="http://placehold.it/150x100" alt="sedona" width="" height="">
+                      </div>
+                          <!--скрытый div, при наведении виден,скачать фотошоп доделать для всех article -->
+                          <div class="hidden-panel">
+                          </div>
+              </article>
+              <article  class="version-of-sites">
+                  <div class="version-of-sites-slider-top">
+                  </div>
+                      <div class="version-of-sites-pink-img">>
+                          <img src="http://placehold.it/150x100" alt="pink" width="" height="">
+                      </div>
+                          <div class="hidden-panel">
+                          </div>
+              </article>
+              <article  class="version-of-sites">
+                  <div class="version-of-sites-slider-top">
+                  </div>
+                      <div  class="version-of-sites-borodinski-img">
+                          <img src="http://placehold.it/150x100" alt="borodinski" width="" height="">
+                      </div>
+                          <div class="hidden-panel">
+                          </div>
+              </article>
+              <article  class="version-of-sites">
+                  <div class="version-of-sites-slider-top">
+                  </div>
+                      <div class="version-of-sites-mishka-img">
+                          <img src="http://placehold.it/150x100" alt="mishka" width="" height="">
+                      </div>
+                          <div class="hidden-panel">
+                          </div>
+              </article>
+              <article class="version-of-sites">
+                  <div class="version-of-sites-slider-top">
+                  </div>
+                      <div class="version-of-sites-?-img">
+                          <img src="http://placehold.it/150x100" alt="?" width="" height="">
+                      </div>
+                          <div class="hidden-panel">
+                          </div>
+              </article>
+              <article class="version-of-sites">
+                  <div class="version-of-sites-slider-top">
+                  </div>
+                      <div class="version-of-sites-kvast-img">
+                          <img src="http://placehold.it/150x100" alt="kvast" width="" height="">
+                      </div>
+                          <div class="hidden-panel">
+                          </div>
+              </article>
+          </section>
+
+          <div class="pagination">
+              <a class="btn">1</a>
+              <a class="btn" href="#">2</a>
+              <a class="btn" href="#">3</a>
+              <a class="btn" href="#">Следующая</a>
+          </div>
+
+          <section class="map">
+              <div class="map-contacts">
+                  <b class="map-contacts-subtitle">Nerds design studio</b>
+                  <p class="map-contacts-text">191186, Санкт-Петербург,ул. Б. Коннюшенная, д. 19/8
+                  <span class="map-contacts-tel"> тел. +7(812)275-75-75 </span></p>
+                  <a class="map-contacts-btn-write-us" href="#">Напишите нам</a>
+              </div>
+              <div class="map-background">
+                  <img src="#" alt="map-our-studio" width="" height="">
+              </div>
+          </section>
+    </main>
+
+  <footer class="footer">
+      <article class="footer-social">
+          <a class="footer-social-btn" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <a class="footer-social-btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
+          <a class="footer-social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
+      </article>
+      <div class="footer-proposal">
+          <b class="footer-proposal-slogan">Давайте дружить,это выгодно!</b>
+          <p class="footer-proposal-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
-      
-<!-- блок кнопок перехода на др.страницы --> 
-    <div>
-  <a class="btn" href="#">1</a>    
-  <a class="btn" href="#">2</a> 
-  <a class="btn" href="#">3</a> 
-  <a class="btn" href="#">Следующая</a>
-    </div>
-      
-<!-- подвал -->
-     <footer class="main-footer">  
-         <div class="map"> 
-             <section class="map-contacts">
-                <b>Nerds design studio</b><br>
-                191186, Санкт-Петербург,<br>ул. Б. Коннюшенная, д. 19/8<br></p>
-                <p>тел. +7(812)275-75-75</p>
-                <a class="btn" href="#">Напишите нам</a>
-             </section>
-             <section class="map-image">
-                <img src="#" alt="map-our-studio" width="" height="">
-             </section>
-             <article class="footer-social">
-              <div class="footer-social">
-                <a class="footer-social-btn" href="https://vk.com/htmlacademy">Вконтакте</a>
-                <a class="footer-social-btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
-                <a class="footer-social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
-                <b>Давайте дружить,это выгодно!</b>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
-             </div>
-            </article>
-         </div> 
-      </footer>     
-      
-  
+      </article>
+  </footer>
+
   </body>
-  </html>
+</html>

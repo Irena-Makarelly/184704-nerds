@@ -1,103 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-      
-<!-- шапка -->
-    <header class="main-header">
-        <div class="logo">
-           <a href="#"><img src="http://placehold.it/150x100" alt="nerds" width="" height=""></a>
+    <head>
+        <meta charset="utf-8">
+            <title>HTML Academy: Нёрдс</title>
+    </head>
+    <body>
+
+    <header class="header">
+        <div class="header-logo">
+            <img src="http://placehold.it/150x100" alt="nerds" width="" height="">
         </div>
-        <nav class="main-navigation">
-            <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
+        <nav class="header-navigation">
+            <ul class="header-navigation-list">
+                <li class="header-navigation-item">
+                    <a class="header-navigation-link" href="#">Студия</a>
+                </li>
+                <li class="header-navigation-item">
+                    <a class="header-navigation-link" href="#">Клиенты</a>
+                </li>
+                <li class="header-navigation-item">
+                    <a class="header-navigation-link" href="#">Магазин</a>
+                </li>
+                <li  class="header-navigation-item">
+                    <a class="header-navigation-link" href="#">Контакты</a>
+                </li>
             </ul>
-            <a href="#">Корзина</a>
-        </nav>   
-        
-         <div class="main-header-bottom">
-        <section>
-            <b>Долго, дорого, скурпулезно</b>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-            <a class="btn" href="#">Узнать больше</a>
-        </section>
+        <div class="user-block">
+            <a class="user-block-basket" href="#">Корзина</a>
         </div>
-      </header>
-      
-<!-- основное содержание --> 
-    <div class="features-content">
-      <ul>
-        <li class="feature-content-item">
-          <h2>Веб-сайты</h2>
-          <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-          <a class="btn" href="#">Заказать</a>
-        </li>
-        <li class="feature-content-item">
-          <h2>Приложения</h2>
-          <p>Покорите топ-10 приложений в AppStore и Goggle Play</p>
-          <a class="btn" href="#">Заказать</a>
-        </li>
-        <li class="feature-content-item">
-          <h2>Презентации</h2>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="btn" href="#">Заказать</a>
-        </li>
-      </ul>
-    </div>
-      
-    <div class="index-content">
+        </nav>
+
+        <section class="header-bottom">
+            <div class="header-bottom-slider1">
+                <h1>Студия "Nerds"</h1> <!-- скрыть потом с помощью css -->
+                <b class="header-bottom-slider1-slogan">Долго, дорого, скурпулезно</b>
+                <p class="header-bottom-slider1-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+                <a class="header-bottom-slider1-btn" href="#">Узнать больше</a>
+            </div>
+            <div class="header-bottom-slider2"> <!-- доделать, Photoshop скачать -->
+            <div class="header-bottom-slider3"> <!-- доделать, Photoshop скачать -->
+        </section>
+    </header>
+
+<main class="container">
+    <section class="features-content-list">
+        <div class="features-content-item">
+            <h3 class="feature-content-item-subtitle">Веб-сайты</h3>
+            <p class="feature-content-item-text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+            <a class="feature-content-item-btn" href="#">Заказать</a>
+        </div>
+        <div class="feature-content-item">
+            <h3 class="feature-content-item-subtitle">Приложения</h3>
+            <p class="feature-content-item-text">Покорите топ-10 приложений в AppStore и Goggle Play</p>
+            <a class="feature-content-item-btn" href="#">Заказать</a>
+        </div>
+        <div class="feature-content-item">
+            <h3 class="feature-content-item-subtitle">Презентации</h3>
+            <p class="feature-content-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="feature-content-item-btn" href="#">Заказать</a>
+        </div>
+    </section>
+
+    <section class="index-content">
         <div class="index-content-left">
-                <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                <h3>Выполняем заказы на разработку:</h3>
-                <ul>
-                    <li>Веб-сайтов любой сложности</li>
-                    <li>Мобильных приложений для iOS и Android</li>
-                    <li>Слайдшоу и видео для корпоративных презентаций</li>
-                </ul>    
+            <h2 class="index-content-left-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+            <p class="index-content-left-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <h3 class="index-content-left-subtitle">Выполняем заказы на разработку:</h3>
+            <ul class="index-content-left-list">
+                <li class="index-content-left-item">Веб-сайтов любой сложности</li>
+                <li class="index-content-left-item">Мобильных приложений для iOS и Android</li>
+                <li class="index-content-left-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
         </div>
         <div class="index-content-right">
-               <img src="http://placehold.it/150x100" alt="nerds" width="" height="">
-               <table>
-                  <caption>С 2014 года любим точность во всем:</caption>
-                  <tr>
-                    <td>146%</td>
-                    <td>100%</td>
-                    <td>50%</td>
-                  </tr>
-                  <tr>
-                    <td>Уровень<br>самоотдачи</td>
-                    <td>Соблюдение<br>сроков</td>
-                    <td>Минимальная<br>предоплата</td>  
-                  </tr>   
-               </table>      
-        </div>
-   </div>
-      
-<!-- полупрозрачные картинки-ссылки, не знаю как лучше назвать -->
+            <div class="index-content-right-image">
+                <img src="http://placehold.it/150x100" alt="nerds" width="" height="">
+            </div>
+                <table class="index-content-right-table">
+                    <caption class="index-content-right-table-subtitle">С 2014 года любим точность во всем:</caption>
+                        <tr class="table-percent">
+                            <td class="table-percent-item">146%</td>
+                            <td class="table-percent-item">100%</td>
+                            <td class="table-percent-item">50%</td>
+                        </tr>
+                        <tr class="table-features">
+                            <td class="table-features-item">Уровень самоотдачи</td>
+                            <td class="table-features-item">Соблюдение сроков</td>
+                            <td class="table-features-item">Минимальная предоплата</td>
+                        </tr>
+                </table>
+            </div>
+    </section>
+
     <div class="logo-site-images">
-         <a href="#"><img src="http://placehold.it/150x100" alt="nerds" width="." height=""></a>
-         <a href="#"><img src="http://placehold.it/150x100" alt="borodinsky" width="" height=""></a>
-         <a href="#"><img src="http://placehold.it/150x100" alt="pink" width="" height=""></a>
-         <a href="#"><img src="http://placehold.it/150x100" alt="mishka" width="" height=""></a>
+        <a class="logo-site-images-nerds" href="#"><img src="http://placehold.it/150x100" alt="nerds" width="." height=""></a>
+        <a class="logo-site-images-borodinsky" href="#"><img src="http://placehold.it/150x100" alt="borodinsky" width="" height=""></a>
+        <a class="logo-site-images-pink" href="#"><img src="http://placehold.it/150x100" alt="pink" width="" height=""></a>
+        <a class="logo-site-images-mishka" href="#"><img src="http://placehold.it/150x100" alt="mishka" width="" height=""></a>
     </div>
+</main>
 
+    <section class="map">
+        <div class="map-contacts">
+            <b class="map-contacts-subtitle">Nerds design studio</b>
+            <p class="map-contacts-text">191186, Санкт-Петербург,ул. Б. Коннюшенная, д. 19/8
+            <span class="map-contacts-tel"> тел. +7(812)275-75-75 </span></p>
+            <a class="map-contacts-btn-write-us" href="#">Напишите нам</a>
+        </div>
+        <div class="map-background">
+            <img src="#" alt="map-our-studio" width="" height="">
+        </div>
+    </section>
 
-      
--
+    <footer class="footer">
+        <article class="footer-social">
+            <a class="footer-social-btn" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="footer-social-btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
+            <a class="footer-social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
+        </article>
+        <div class="footer-proposal">
+            <b class="footer-proposal-slogan">Давайте дружить,это выгодно!</b>
+            <p class="footer-proposal-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+        </article>
+    </footer>
+
   </body>
 </html>

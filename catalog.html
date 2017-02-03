@@ -3,12 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Нёрдс</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <div class="header-logo-nerds">
-                    <img src="img/logo-nerds.png" alt="Нёрдс">
+                    <img src="img/logo-nerds.png" alt="Nerds">
                 </div>
                 <nav class="header-navigation">
                     <ul class="header-navigation-list">
@@ -42,128 +44,128 @@
 
                     <div class="price">
                         <h2 class="price-cursor">Стоимость:</h2>
-                            <div>
-                                <div>
-                                </div>
-                            </div>
+                        <div>
+                           <div>
+                           </div>
+                       </div>
                     </div>
-                    <div class="sort">
-                        <h2 class="sort-cursor">Сортировать:</h2>
-                    </div>
-                        <div class="sort-options">
-                            <a href="#">По цене</a>
-                            <a href="#">По типу</a>
-                            <a href="#">По названию</a>
-                            <img src="img/sort-down.png" alt="arrow">
-                            <img src="img/sort-up.png" alt="arrow">
-                        </div>
-
 
                     <div class="grid">
                         <h3 class="grid-subtitle">Сетка:</h3>
-                            <div class="grid-item-adaptive">
-                                <input type="radio" name="grid" value="adaptive" checked>
-                                <label for="adaptive">Адаптивная</label>
-                            </div>
-                            <div class="grid-item-fix">
-                                <input type="radio" name="grid" value="fix">
-                                <label for="fix">Фиксированная</label>
-                            </div>
-                            <div class="grid-item-elastic">
-                                <input type="radio" name="grid" value="elastic">
-                                <label for="elastic">Резиновая</label>
-                            </div>
+                        <div class="grid-item-adaptive">
+                            <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+                            <label for="adaptive">Адаптивная</label>
+                        </div>
+                        <div class="grid-item-fix">
+                            <input type="radio" name="grid" value="fix" id="fix">
+                            <label for="fix">Фиксированная</label>
+                        </div>
+                        <div class="grid-item-elastic">
+                            <input type="radio" name="grid" value="elastic" id="elastic">
+                            <label for="elastic">Резиновая</label>
+                        </div>
                     </div>
 
                     <div class="features">
                         <h3 class="features-subtitle">Особенности:</h3>
-                            <div class="features-item-slider">
-                                <input type="checkbox" name="features"  value="slider" id="slider" checked>
-                                <label for="slider">Слайдер</label>
-                            </div>
-                            <div class="features-item-block-benefits">
-                                <input type="checkbox" name="features" value="block-benefits" id="block-benefits">
-                                <label for="block-benefits">Блок преимуществ</label>
-                            </div>
-                            <div class="features-item-news">
-                                <input type="checkbox" name="features" value="news" id="news" checked>
-                                <label for="news">Новости</label>
-                            </div>
-                            <div class="features-item-gallery">
-                                <input type="checkbox" name="features" value="gallery" id="gallery">
-                                <label for="gallery">Галерея</label>
-                            </div>
-                            <div class="features-item-basket">
-                                <input type="checkbox" name="features" value="basket" id="basket">
-                                <label for="basket">Корзина</label>
-                            </div>
-                            <div class="features-button">
-                                <input type="submit " value="Показать">
-                            </div>
+                        <div class="features-item-slider">
+                            <input type="checkbox" name="features"  value="slider" id="slider" checked>
+                            <label for="slider">Слайдер</label>
+                        </div>
+                        <div class="features-item-block-benefits">
+                            <input type="checkbox" name="features" value="block-benefits" id="block-benefits">
+                            <label for="block-benefits">Блок преимуществ</label>
+                        </div>
+                        <div class="features-item-news">
+                            <input type="checkbox" name="features" value="news" id="news" checked>
+                            <label for="news">Новости</label>
+                        </div>
+                        <div class="features-item-gallery">
+                            <input type="checkbox" name="features" value="gallery" id="gallery">
+                            <label for="gallery">Галерея</label>
+                        </div>
+                        <div class="features-item-basket">
+                            <input type="checkbox" name="features" value="basket" id="basket">
+                            <label for="basket">Корзина</label>
+                        </div>
+                        <div class="features-button">
+                            <button type="submit">Показать</button>
+                        </div>
                     </div>
                 </form>
             </section>
 
+            <div class="sort">
+                <h2 class="sort-cursor">Сортировать:</h2>
+            </div>
+                <div class="sort-options">
+                    <a href="#">По цене</a>
+                    <a href="#">По типу</a>
+                    <a href="#">По названию</a>
+                    <img src="img/sort-down.png" alt="Arrow">
+                    <img src="img/sort-up.png" alt="Arrow">
+                </div>
+
             <section class="version-of-sites">
-               <article class="version-of-sites">
+                <article class="version-of-sites">
                     <div class="version-of-sites-sedona-img">
                         <img src="img/img-sedona.jpg" alt="Sedona">
                     </div>
-                        <div class="sedona-hover">
-                            <h4 class="sedona-hover-title">Sedona</h4>
-                            <p class="sedona-hover-text">Информационный сайт для туристов</p>
-                            <a class="sedona-hover-price" href="#">9900 руб.</a>
-                        </div>
+                    <div class="sedona-hover">
+                        <h4 class="sedona-hover-title">Sedona</h4>
+                        <p class="sedona-hover-text">Информационный сайт для туристов</p>
+                        <a class="sedona-hover-price" href="#">9900 руб.</a>
+                    </div>
                 </article>
                 <article  class="version-of-sites">
                     <div class="version-of-sites-pink-img">
                         <img src="img/img-pink.jpg" alt="Pink">
                     </div>
-                        <div class="pink-app-hover">
-                            <h4 class="pink-app-hover-title">Pink App</h4>
-                            <p class="pink-app-hover-text">Продуктовый лендинг приложения для iOS и Android</p>
-                            <a class="pink-app-hover-price" href="#">9900 руб.</a>
-                        </div>
+                    <div class="pink-app-hover">
+                        <h4 class="pink-app-hover-title">Pink App</h4>
+                        <p class="pink-app-hover-text">Продуктовый лендинг приложения для iOS и Android</p>
+                        <a class="pink-app-hover-price" href="#">9900 руб.</a>
+                    </div>
                 </article>
                 <article  class="version-of-sites">
                     <div  class="version-of-sites-barbershop-img">
                         <img src="img/img-barbershop.jpg" alt="Barbershop">
                     </div>
-                        <div class="barbershop-hover">
-                            <h4 class="barbershop-hover-title">Barbershop</h4>
-                            <p class="barbershop-hover-text">Сайт салона красоты. Для мужчин, да.</p>
-                            <a class="barbershop-hover-price" href="#">9900 руб.</a>
-                        </div>
+                    <div class="barbershop-hover">
+                        <h4 class="barbershop-hover-title">Barbershop</h4>
+                        <p class="barbershop-hover-text">Сайт салона красоты. Для мужчин, да.</p>
+                        <a class="barbershop-hover-price" href="#">9900 руб.</a>
+                    </div>
                 </article>
                 <article  class="version-of-sites">
                     <div class="version-of-sites-mishka-img">
                         <img src="img/img-mishka.jpg" alt="Mishka">
                     </div>
-                        <div class="mishka-hover">
-                            <h4 class="mishka-hover-title">Mishka</h4>
-                            <p class="mishka-hover-text">Интернет-магазин вязаных игрушек</p>
-                            <a class="mishka-hover-price" href="#">9900 руб.</a>
-                        </div>
+                    <div class="mishka-hover">
+                        <h4 class="mishka-hover-title">Mishka</h4>
+                        <p class="mishka-hover-text">Интернет-магазин вязаных игрушек</p>
+                        <a class="mishka-hover-price" href="#">9900 руб.</a>
+                    </div>
                 </article>
                 <article class="version-of-sites">
                     <div class="version-of-sites-a-plus-img">
                         <img src="img/img-aplus.jpg" alt="A Plus">
                     </div>
-                        <div class="a-plus-hover">
-                            <h4 class="a-plus-hover-title">A Plus</h4>
-                            <p class="a-plus-hover-text">Лендинг курсов повышения квалификации</p>
-                            <a class="a-plus-hover-price" href="#">9900 руб.</a>
-                        </div>
+                    <div class="a-plus-hover">
+                        <h4 class="a-plus-hover-title">A Plus</h4>
+                        <p class="a-plus-hover-text">Лендинг курсов повышения квалификации</p>
+                        <a class="a-plus-hover-price" href="#">9900 руб.</a>
+                    </div>
                 </article>
                 <article class="version-of-sites">
                     <div class="version-of-sites-kvast-img">
                         <img src="img/img-kvast.jpg" alt="Kvast">
                     </div>
-                        <div class="kvast-hover">
-                            <h4 class="kvast-hover-title">Кваст</h4>
-                            <p class="kvast-hover-text">Промо-сайт производителя крафтового кваса</p>
-                            <a class="kvast-hover-price" href="#">9900 руб.</a>
-                        </div>
+                    <div class="kvast-hover">
+                        <h4 class="kvast-hover-title">Кваст</h4>
+                        <p class="kvast-hover-text">Промо-сайт производителя крафтового кваса</p>
+                        <a class="kvast-hover-price" href="#">9900 руб.</a>
+                    </div>
                 </article>
             </section>
 
@@ -182,7 +184,7 @@
                     <a class="contacts-btn-write-us" href="#">Напишите нам</a>
                 </div>
                 <div class="map-background">
-                    <img src="#" alt="map-nerds-studio">
+                    <img src="#" alt="Map-nerds-studio">
                 </div>
             </section>
         </main>
@@ -190,13 +192,13 @@
         <footer class="footer">
             <article class="footer-social">
                 <a class="footer-social-btn" href="https://vk.com/htmlacademy">
-                    <img src="img/vk-icon.png" alt="В контакте">Вконтакте
+                    <img src="img/vk-icon.png" alt="VK">Вконтакте
                 </a>
                 <a class="footer-social-btn" href="https://facebook.com/htmlacademy">
-                    <img src="img/fb-icon.png" alt="Фейсбук">Фейсбук
+                    <img src="img/fb-icon.png" alt="Facebook">Фейсбук
                 </a>
                 <a class="footer-social-btn" href="https://instagram.com/htmlacademy">
-                    <img src="img/insta-icon.png"  alt="Инстаграм">Инстаграм
+                    <img src="img/insta-icon.png"  alt="Instagram">Инстаграм
                 </a>
             <div class="footer-proposal">
                 <h4 class="footer-proposal-slogan">Давайте дружить,это выгодно!</h4>

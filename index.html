@@ -2,128 +2,155 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-            <title>HTML Academy: Нёрдс</title>
+        <title>HTML Academy: Нёрдс</title>
     </head>
     <body>
-
-    <header class="header">
-        <div class="header-logo">
-            <img src="http://placehold.it/150x100" alt="nerds" width="" height="">
-        </div>
-        <nav class="header-navigation">
-            <ul class="header-navigation-list">
-                <li class="header-navigation-item">
-                    <a class="header-navigation-link" href="#">Студия</a>
-                </li>
-                <li class="header-navigation-item">
-                    <a class="header-navigation-link" href="#">Клиенты</a>
-                </li>
-                <li class="header-navigation-item">
-                    <a class="header-navigation-link" href="#">Магазин</a>
-                </li>
-                <li  class="header-navigation-item">
-                    <a class="header-navigation-link" href="#">Контакты</a>
-                </li>
-            </ul>
-        <div class="user-block">
-            <a class="user-block-basket" href="#">Корзина</a>
-        </div>
-        </nav>
-
-        <section class="header-bottom">
-            <div class="header-bottom-slider1">
-                <h1>Студия "Nerds"</h1> <!-- скрыть потом с помощью css -->
-                <b class="header-bottom-slider1-slogan">Долго, дорого, скурпулезно</b>
-                <p class="header-bottom-slider1-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-                <a class="header-bottom-slider1-btn" href="#">Узнать больше</a>
+        <header class="header">
+            <div class="container">
+                <div class="header-logo-nerds">
+                    <img src="img/logo-nerds.png" alt="Нёрдс">
+                </div>
+                <nav class="header-navigation">
+                    <ul class="header-navigation-list">
+                        <li class="header-navigation-item">
+                            <a class="header-navigation-link" href="#">Студия</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a class="header-navigation-link" href="#">Клиенты</a>
+                        </li>
+                        <li class="header-navigation-item">
+                            <a class="header-navigation-link" href="#">Магазин</a>
+                        </li>
+                        <li  class="header-navigation-item">
+                            <a class="header-navigation-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                <div class="user-block">
+                    <img src="img/basket.png" alt="Корзина">
+                    <a class="user-block-basket" href="#">Корзина</a>
+                </div>
+                </nav>
+                <section class="slides">
+                    <div class="slide1">
+                        <h2 class="slide1-slogan">Долго, дорого, скурпулезно</h2>
+                        <p class="slide1-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                        <img src="img/slide1.png" alt="Слайдер1">
+                        <a class="slide1-btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="slide2">
+                        <h2 class="slide2-slogan">Любим математику как никто другой</h2>
+                        <p class="slide2-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                        <img src="img/slide2.png" alt="Слайдер2">
+                        <a class="slide2-btn" href="#">Узнать больше</a>
+                    </div>
+                    <div class="slide3">
+                        <h2 class="slide3-slogan">Только ночь, только хардкор</h2>
+                        <p class="slide3-text">Работать днем,как все? мы против этого. Ближе к полуночи работа только начинается.</p>
+                        <img src="img/slide3.png" alt="Слайдер3">
+                        <a class="slide3-btn" href="#">Узнать больше</a>
+                    </div>
+                </section>
             </div>
-            <div class="header-bottom-slider2"> <!-- доделать, Photoshop скачать -->
-            <div class="header-bottom-slider3"> <!-- доделать, Photoshop скачать -->
-        </section>
-    </header>
+        </header>
 
-<main class="container">
-    <section class="features-content-list">
-        <div class="features-content-item">
-            <h3 class="feature-content-item-subtitle">Веб-сайты</h3>
-            <p class="feature-content-item-text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-            <a class="feature-content-item-btn" href="#">Заказать</a>
-        </div>
-        <div class="feature-content-item">
-            <h3 class="feature-content-item-subtitle">Приложения</h3>
-            <p class="feature-content-item-text">Покорите топ-10 приложений в AppStore и Goggle Play</p>
-            <a class="feature-content-item-btn" href="#">Заказать</a>
-        </div>
-        <div class="feature-content-item">
-            <h3 class="feature-content-item-subtitle">Презентации</h3>
-            <p class="feature-content-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="feature-content-item-btn" href="#">Заказать</a>
-        </div>
-    </section>
+        <main class="container">
+            <section class="features-content-list">
+                <div class="features-content-item">
+                    <img src="img/illustration-1.png" alt="Веб-сайты">
+                    <h3 class="feature-content-item-subtitle">Веб-сайты</h3>
+                    <p class="feature-content-item-text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+                    <a class="feature-content-item-btn" href="#">Заказать</a>
+                </div>
+                <div class="feature-content-item">
+                    <img src="img/illustration-2.png" alt="Приложения">
+                    <h3 class="feature-content-item-subtitle">Приложения</h3>
+                    <p class="feature-content-item-text">Покорите топ-10 приложений в AppStore и Goggle Play</p>
+                    <a class="feature-content-item-btn" href="#">Заказать</a>
+                </div>
+                <div class="feature-content-item">
+                    <img src="img/illustration-3.png" alt="Презентации">
+                    <h3 class="feature-content-item-subtitle">Презентации</h3>
+                    <p class="feature-content-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+                    <a class="feature-content-item-btn" href="#">Заказать</a>
+                </div>
+            </section>
 
-    <section class="index-content">
-        <div class="index-content-left">
-            <h2 class="index-content-left-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-            <p class="index-content-left-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <h3 class="index-content-left-subtitle">Выполняем заказы на разработку:</h3>
-            <ul class="index-content-left-list">
-                <li class="index-content-left-item">Веб-сайтов любой сложности</li>
-                <li class="index-content-left-item">Мобильных приложений для iOS и Android</li>
-                <li class="index-content-left-item">Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-        </div>
-        <div class="index-content-right">
-            <div class="index-content-right-image">
-                <img src="http://placehold.it/150x100" alt="nerds" width="" height="">
+            <section class="index-content">
+                <div class="index-content-left">
+                    <h2 class="index-content-left-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+                    <p class="index-content-left-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                    <h3 class="index-content-left-subtitle">Выполняем заказы на разработку:</h3>
+                    <ul class="index-content-left-list">
+                        <li class="index-content-left-item">Веб-сайтов любой сложности</li>
+                        <li class="index-content-left-item">Мобильных приложений для iOS и Android</li>
+                        <li class="index-content-left-item">Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+                </div>
+                <div class="index-content-right">
+                    <div class="index-content-right-image">
+                        <img src="img/Background-Nerds.jpg" alt="Презентации">
+                    </div>
+                        <table class="index-content-right-table">
+                            <caption class="index-content-right-table-subtitle">С 2014 года любим точность во всем:</caption>
+                                <tr class="table-percent">
+                                    <td class="table-percent-item">146%</td>
+                                    <td class="table-percent-item">100%</td>
+                                    <td class="table-percent-item">50%</td>
+                                </tr>
+                                <tr class="table-features">
+                                    <td class="table-features-item">Уровень самоотдачи</td>
+                                    <td class="table-features-item">Соблюдение сроков</td>
+                                    <td class="table-features-item">Минимальная предоплата</td>
+                                </tr>
+                        </table>
+                    </div>
+            </section>
+
+            <div class="logo-site-images">
+                <a class="logo-site-images-html-academy" href="#">
+                    <img src="img/logo-1-html-academy.png" alt="Html Academy">
+                </a>
+                <a class="logo-site-images-barbershop" href="#">
+                    <img src="img/logo-2-barbershop.png" alt="Barbershop">
+                </a>
+                <a class="logo-site-images-pink" href="#">
+                    <img src="img/logo-3-pink.png" alt="Pink">
+                </a>
+                <a class="logo-site-images-mishka" href="#">
+                    <img src="img/logo-4-mishka.png" alt="Mishka">
+                </a>
             </div>
-                <table class="index-content-right-table">
-                    <caption class="index-content-right-table-subtitle">С 2014 года любим точность во всем:</caption>
-                        <tr class="table-percent">
-                            <td class="table-percent-item">146%</td>
-                            <td class="table-percent-item">100%</td>
-                            <td class="table-percent-item">50%</td>
-                        </tr>
-                        <tr class="table-features">
-                            <td class="table-features-item">Уровень самоотдачи</td>
-                            <td class="table-features-item">Соблюдение сроков</td>
-                            <td class="table-features-item">Минимальная предоплата</td>
-                        </tr>
-                </table>
+
+            <section class="map-contacts">
+                <div class="contacts">
+                    <h4 class="contacts-subtitle">Nerds design studio</h4>
+                    <p class="contacts-text">191186, Санкт-Петербург,ул. Б. Коннюшенная, д. 19/8
+                    <span class="contacts-tel"> тел. +7(812)275-75-75 </span></p>
+                    <a class="contacts-btn-write-us" href="#">Напишите нам</a>
+                </div>
+                <div class="map-background">
+                    <img src="#" alt="map-nerds-studio">
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <article class="footer-social">
+                <a class="footer-social-btn" href="https://vk.com/htmlacademy">
+                    <img src="img/vk-icon.png" alt="В контакте">Вконтакте
+                </a>
+                <a class="footer-social-btn" href="https://facebook.com/htmlacademy">
+                    <img src="img/fb-icon.png" alt="Фейсбук">Фейсбук
+                </a>
+                <a class="footer-social-btn" href="https://instagram.com/htmlacademy">
+                    <img src="img/insta-icon.png"  alt="Инстаграм">Инстаграм
+                </a>
+            <div class="footer-proposal">
+                <h4 class="footer-proposal-slogan">Давайте дружить,это выгодно!</h4>
+                <p class="footer-proposal-text">Скидка 10% для друзей из социальных сетей.</p>
             </div>
-    </section>
-
-    <div class="logo-site-images">
-        <a class="logo-site-images-nerds" href="#"><img src="http://placehold.it/150x100" alt="nerds" width="." height=""></a>
-        <a class="logo-site-images-borodinsky" href="#"><img src="http://placehold.it/150x100" alt="borodinsky" width="" height=""></a>
-        <a class="logo-site-images-pink" href="#"><img src="http://placehold.it/150x100" alt="pink" width="" height=""></a>
-        <a class="logo-site-images-mishka" href="#"><img src="http://placehold.it/150x100" alt="mishka" width="" height=""></a>
-    </div>
-</main>
-
-    <section class="map">
-        <div class="map-contacts">
-            <b class="map-contacts-subtitle">Nerds design studio</b>
-            <p class="map-contacts-text">191186, Санкт-Петербург,ул. Б. Коннюшенная, д. 19/8
-            <span class="map-contacts-tel"> тел. +7(812)275-75-75 </span></p>
-            <a class="map-contacts-btn-write-us" href="#">Напишите нам</a>
-        </div>
-        <div class="map-background">
-            <img src="#" alt="map-our-studio" width="" height="">
-        </div>
-    </section>
-
-    <footer class="footer">
-        <article class="footer-social">
-            <a class="footer-social-btn" href="https://vk.com/htmlacademy">Вконтакте</a>
-            <a class="footer-social-btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
-            <a class="footer-social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
-        </article>
-        <div class="footer-proposal">
-            <b class="footer-proposal-slogan">Давайте дружить,это выгодно!</b>
-            <p class="footer-proposal-text">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-        </article>
-    </footer>
+            </article>
+        </footer>
 
   </body>
 </html>

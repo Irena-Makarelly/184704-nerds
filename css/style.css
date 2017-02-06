@@ -1,51 +1,42 @@
 body {
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
-  font-family: "Roboto","Arial","sans-serif";
-  font-weight: "Regular";
+  color: #000;
+  font-family: "Roboto","Arial",sans-serif;
 }
 
-.hide-h1 h1 {
+/*страница index.html */
+.slide-slogan {
+  font-size: 55px;
+  line-height:55px;
+  font-weight: "Medium";
+}
+
+.hidden-title {
   display: none;
 }
 
-.catalog-caption h1 {
-  font-size: 55px;
-  line-height: 55px;
-  color: #000000;
-font-family: "Roboto","Arial","sans-serif";
-  font-weight: "Medium";
-}
-
-.slide-slogan h2 {
-  font-size: 55px;
-  line-height:55px;
-  color: #000000;
-  font-family: "Roboto","Arial","sans-serif";
-  font-weight: "Medium";
-}
-
-.index-content-left-title h2 {
+.index-content-about-us-title {
   font-size: 45px;
   line-height:45px;
-  color: #000000;
-font-family: "Roboto","Arial","sans-serif";
   font-weight: "Medium";
 }
 
-.price-cursor h2{
+/*страница catalog.html*/
+.catalog-caption {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: "Medium";
+}
+
+.price-cursor {
   font-size: 18px;
   line-height:30px;
-  color: #000000;
-  font-family: "Roboto","Arial","sans-serif";
   font-weight: "Bold";
 }
 
-.sort-cursor h2 {
+.sort-cursor {
   font-size: 18px;
   line-height:18px;
-  color: #000000;
-font-family: "Roboto","Arial","sans-serif";
   font-weight: "Bold";
 }

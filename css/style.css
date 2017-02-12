@@ -3,64 +3,107 @@ body {
   line-height: 24px;
   color: #000;
   font-family: "Roboto","Arial",sans-serif;
-  background-size: 1440px;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .header {
-  background: #eeeeee;
-  outline: rgb(57, 250, 125) none 2px;
-  margin-bottom: 35px;
+  background-color: #eeeeee;
 }
 
-.header-logo-nerds {
-  float:left;
+.index-logo {
+  float: left;
+  margin-right: 202px;
+  width: 160px;
+  height: 65px;
+  margin-top: 49px;
+  margin-bottom: 85px;
 }
 
 .header-navigation {
   float: left;
-  min-height: 132px;
-  width: 500px;
+  width: 1000px;
+  margin-bottom: 18px;
 }
 
 .header-navigation ul {
   list-style: none;
+  margin-top: 80px;
 }
 
 .header-navigation li {
-  display: inline;
+  vertical-align: top;
+  display: inline-block;
   float: left;
-  margin-right: 40px;
+  margin-right: 45px;
 }
 
 .user-block {
   float: right;
-  min-height: 132px;
-  width: 270px;
-}
-
-.container {
-  width: 1440px;
-  height: 2476px;
-  padding: 0 10px;
-  margin: 0 auto;
+  width: 150px;
 }
 
 /*слайдер*/
+
 .slider {
-  clear: both;
-  position: relative;
+
+  margin-bottom: 80px;
 }
 
-.slider-slides {
-  width: 400%;
+.slide1-panel {
+  display: block;
 }
 
-.slide img {
-  float:left;
+.slide2-panel {
+  display: none;
 }
 
-.slider-inner {
-  overflow: hidden;
+.slide3-panel {
+  display: none;
+}
+
+.slide1-description {
+  width: 400px;
+  height: 310px;
+}
+
+.slide1-background {
+  background-image: url("img/slide1.png");
+  width: 698px;
+  height: 413px;
+}
+
+.slide2-background {
+  background-image: url("img/slide2.png");
+  width: 663px;
+  height: 430px;
+}
+
+.slide3-background {
+  background-image: url("img/slide3.png");
+  width: 759px;
+  height: 411px;
+}
+
+.slide2-description {
+  width: 535px;
+  height: 300px;
+}
+
+.slide3-description {
+  width: 425px;
+  height: 290px;
 }
 
 .slide-slogan {
@@ -69,15 +112,7 @@ body {
  font-weight: "Medium";
 }
 
-.slider input[type=radio] {
-    display: none;
-}
-
-.slider-controls {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
+/*кнопки слайдера*/
 .slider-controls label {
     display: inline-block;
     width: 10px;
@@ -96,28 +131,37 @@ body {
     background-color: #666666;
 }
 
-/*не работает, как высчитать??*/
 #btn-1:checked ~ .slider-inner .slider-slides {
-    transform: translate(0);
+    display: block;
 }
 
 #btn-2:checked ~ .slider-inner .slider-slides {
-    transform: translate(-450px);
+    display: block;
 }
 
 #btn-3:checked ~ .slider-inner .slider-slides {
-    transform: translate(-900px);
+    display: block;
 }
 
 .hidden-title {
-  display: none;
+  width: 0px;
+  height: 0px;
+  position: absolute (1000px);
+}
+
+.features-content-list {
+  margin-top: 80px;
 }
 
 .features-content-item {
   float: left;
   width: 300px;
+  min-height: 355px;
   margin-right: 100px;
-  margin-bottom: 80px;
+}
+
+.features-content-item:last-child {
+  margin-right: 0px;
 }
 
 .index-content {
@@ -137,12 +181,6 @@ body {
 .index-content-statistic {
   float: right;
   width: 360px;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .logo-site-images {

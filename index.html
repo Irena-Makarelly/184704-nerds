@@ -8,11 +8,12 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                <div class="header-logo-nerds">
-                    <img src="img/logo-nerds.png" alt="Nerds" width="160px" height="65px">
-                </div>
+            <div class="container clearfix">
+
                 <nav class="header-navigation">
+                    <div class="index-logo">
+                        <img src="img/logo-nerds.png" alt="Nerds" width="160px" height="65px">
+                    </div>
                     <ul class="header-navigation-list">
                         <li class="header-navigation-item">
                             <a class="header-navigation-link" href="#">Студия</a>
@@ -27,51 +28,70 @@
                             <a class="header-navigation-link" href="#">Контакты</a>
                         </li>
                     </ul>
-                <div class="user-block">
-                    <img src="img/basket.png" alt="Basket"  width="15px" height="15px">
-                    <a class="user-block-basket" href="#">Корзина</a>
-                </div>
+                    <div class="user-block">
+                        <img src="img/basket.png" alt="Basket"  width="15px" height="15px">
+                        <a class="user-block-basket" href="#">Корзина</a>
+                    </div>
                 </nav>
                 <section class="slider">
-                        <input type="radio" id="btn-1" name="toggle" checked>
-                        <input type="radio" id="btn-2" name="toggle">
-                        <input type="radio" id="btn-3" name="toggle">
+                        <div class="slider-inner">
+                            <div class="slider-slides">
+                                <div class="slide">
+                                    <div class="slide1-panel">
+                                        <div class="slide1-description">
+                                            <h2 class="slide1-slogan">Долго, дорого, скурпулезно</h2>
+                                            <p class="slide1-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                                            <a class="slide1-btn" href="#">Узнать больше</a>
+                                       </div>
+                                    </div>
+                                    <div class="slide1-background">
+                                   <img src="img/slide1.png"  alt="Slider1" width="698px" height="413px">
+                                   </div>
+                                </div>
 
+                                <div class="slide">
+                                    <div class="slide2-panel">
+                                        <div class="slide2-description">
+                                            <h2 class="slide2-slogan">Любим математику как никто другой</h2>
+                                            <p class="slide2-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                                            <a class="slide2-btn" href="#">Узнать больше</a>
+                                        </div>
+                                        <div class="slide2-background">
+                                            <img src="img/slide2.png" alt="Slider2" width="663px" height="430px">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="slide">
+                                    <div class="slide3-panel">
+                                        <div class="slide3-description">
+                                            <h2 class="slide3-slogan">Только ночь, только хардкор</h2>
+                                            <p class="slide3-text">Работать днем,как все? мы против этого. Ближе к полуночи работа только начинается.</p>
+                                            <a class="slide3-btn" href="#">Узнать больше</a>
+                                        </div>
+                                    </div>
+                                    <div class="slide3-background">
+                                    <img src="img/slide3.png" alt="Slider3" width="759px" height="411px">
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="slider-controls">
                             <label for="btn-1"></label>
                             <label for="btn-2"></label>
                             <label for="btn-3"></label>
                         </div>
+                       <input type="radio" id="btn-1" name="toggle" checked>
+                       <input type="radio" id="btn-2" name="toggle">
+                       <input type="radio" id="btn-3" name="toggle">
 
-                        <div class="slider-inner">
-                            <div class="slider-slides">
-                                <div class="slide">
-                                    <h2 class="slide-slogan">Долго, дорого, скурпулезно</h2>
-                                    <p class="slide1-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                                    <a class="slide1-btn" href="#">Узнать больше</a>
-                                    <img src="img/slide1.png" alt="Slider1" width="698px" height="413px">
-
-                                </div>
-                                <div class="slide">
-                                    <h2 class="slide-slogan">Любим математику как никто другой</h2>
-                                    <p class="slide2-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                                    <a class="slide2-btn" href="#">Узнать больше</a>
-                                    <img src="img/slide2.png" alt="Slider2" width="663px" height="430px">
-                                </div>
-                                <div class="slide">
-                                    <h2 class="slide-slogan">Только ночь, только хардкор</h2>
-                                    <p class="slide3-text">Работать днем,как все? мы против этого. Ближе к полуночи работа только начинается.</p>
-                                    <a class="slide3-btn" href="#">Узнать больше</a>
-                                    <img src="img/slide3.png" alt="Slider3" width="759px" height="411px">
-                                </div>
-                            </div>
-                        </div>
                 </section>
+
             </div>
         </header>
 
                 <main class="container">
-                    <section class="features-content-list">
+                    <section class="features-content-list clearfix">
                         <div class="features-content-item">
                             <h1 class="hidden-title">Пустой скрытый заголовок (скрыть в css)</h1>
                             <img src="img/illustration-1.png" alt="Web-sites"  width="300px" height="146px">
@@ -153,21 +173,23 @@
                 </main>
 
                 <footer class="footer">
-                    <article class="footer-social">
-                        <a class="footer-social-btn" href="https://vk.com/htmlacademy">
-                            <img src="img/letter-icon-vk.png" alt="VK"  width="78px" height="78px">Вконтакте
-                        </a>
-                        <a class="footer-social-btn" href="https://facebook.com/htmlacademy">
-                            <img src="img/letter-icon-fb.png" alt="Facebook"  width="78px" height="78px">Фейсбук
-                        </a>
-                        <a class="footer-social-btn" href="https://instagram.com/htmlacademy">
-                            <img src="img/letter-icon-insta.png"  alt="Instagram"  width="78px" height="78px">Инстаграм
-                        </a>
-                    <div class="footer-proposal">
-                        <h4 class="footer-proposal-slogan">Давайте дружить,это выгодно!</h4>
-                        <p class="footer-proposal-text">Скидка 10% для друзей из социальных сетей.</p>
-                    </div>
-                    </article>
+                    <div class="container">
+                        <article class="footer-social">
+                            <a class="footer-social-btn" href="https://vk.com/htmlacademy">
+                                <img src="img/letter-icon-vk.png" alt="VK"  width="78px" height="78px">Вконтакте
+                            </a>
+                            <a class="footer-social-btn" href="https://facebook.com/htmlacademy">
+                                <img src="img/letter-icon-fb.png" alt="Facebook"  width="78px" height="78px">Фейсбук
+                            </a>
+                            <a class="footer-social-btn" href="https://instagram.com/htmlacademy">
+                                <img src="img/letter-icon-insta.png"  alt="Instagram"  width="78px" height="78px">Инстаграм
+                            </a>
+                        <div class="footer-proposal">
+                            <h4 class="footer-proposal-slogan">Давайте дружить,это выгодно!</h4>
+                            <p class="footer-proposal-text">Скидка 10% для друзей из социальных сетей.</p>
+                        </div>
+                        </article>
+                  </div>
                 </footer>
 
           </body>

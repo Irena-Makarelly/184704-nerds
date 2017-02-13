@@ -33,20 +33,22 @@ body {
 
 .header-navigation {
   float: left;
-  width: 1000px;
+  width: 100%;
   margin-bottom: 18px;
 }
 
 .header-navigation ul {
   list-style: none;
   margin-top: 80px;
+  display: inline-block;
+  font-size: 0;
 }
 
 .header-navigation li {
   vertical-align: top;
   display: inline-block;
-  float: left;
   margin-right: 45px;
+  font-size: 15px;
 }
 
 .user-block {
@@ -57,51 +59,41 @@ body {
 /*слайдер*/
 
 .slider {
-
   margin-bottom: 80px;
 }
 
 .slide1-panel {
   display: block;
+  background-image: url("img/slide1.png") center no-repeat;
+  background-size: 698px 413px;
 }
 
 .slide2-panel {
   display: none;
+  background-image: url("/img/slide2.png") center no-repeat;
+  background-size: 663px 413px;
 }
 
 .slide3-panel {
   display: none;
+  background-image: url("/img/slide3.png") center no-repeat;
+  background-size: 759px 411px;
 }
 
 .slide1-description {
+  float: left;
   width: 400px;
   height: 310px;
 }
 
-.slide1-background {
-  background-image: url("img/slide1.png");
-  width: 698px;
-  height: 413px;
-}
-
-.slide2-background {
-  background-image: url("img/slide2.png");
-  width: 663px;
-  height: 430px;
-}
-
-.slide3-background {
-  background-image: url("img/slide3.png");
-  width: 759px;
-  height: 411px;
-}
-
 .slide2-description {
+  float: left;
   width: 535px;
   height: 300px;
 }
 
 .slide3-description {
+  float: left;
   width: 425px;
   height: 290px;
 }
@@ -146,7 +138,8 @@ body {
 .hidden-title {
   width: 0px;
   height: 0px;
-  position: absolute (1000px);
+  position: absolute;
+  right: 5000px;
 }
 
 .features-content-list {

@@ -5,6 +5,10 @@ body {
   font-family: "Roboto","Arial",sans-serif;
 }
 
+input {
+  display: none;
+}
+
 .clearfix::after {
   content: "";
 
@@ -40,7 +44,7 @@ body {
 .header-navigation ul {
   list-style: none;
   margin-top: 80px;
-  display: inline-block;
+  float: left;
   font-size: 0;
 }
 
@@ -64,38 +68,38 @@ body {
 
 .slide1-panel {
   display: block;
-  background-image: url("img/slide1.png") center no-repeat;
+  background-image: url("img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 698px 413px;
 }
 
 .slide2-panel {
   display: none;
-  background-image: url("/img/slide2.png") center no-repeat;
+  background-image: url("img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 663px 413px;
 }
 
 .slide3-panel {
   display: none;
-  background-image: url("/img/slide3.png") center no-repeat;
+  background-image: url("img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 759px 411px;
 }
 
 .slide1-description {
   float: left;
-  width: 400px;
-  height: 310px;
 }
 
 .slide2-description {
   float: left;
-  width: 535px;
-  height: 300px;
 }
 
 .slide3-description {
   float: left;
-  width: 425px;
-  height: 290px;
 }
 
 .slide-slogan {
@@ -136,8 +140,8 @@ body {
 }
 
 .hidden-title {
-  width: 0px;
-  height: 0px;
+  width: 1px;
+  height: 1px;
   position: absolute;
   right: 5000px;
 }
@@ -167,7 +171,7 @@ body {
   font-size: 45px;
   line-height:45px;
   font-weight: "Medium";
-  width: 940px;
+  width: 680px;
   margin-right: 149px;
 }
 
@@ -180,18 +184,20 @@ body {
   margin-left: 300px;
 }
 
+.map-contacts {
+  width: 100%;
+}
+
 .footer {
   margin-top: 41px;
 }
 
 .footer-social {
   float: left;
-  width: 542px;
 }
 
 .footer-proposal {
   float: right;
-  width: 600px;
 }
 
 /*страница catalog.html*/

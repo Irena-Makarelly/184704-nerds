@@ -24,21 +24,22 @@ input {
 
 .container {
   width: 1160px;
-  padding: 0 20px;
+  padding: 20px;
   margin: 0 auto;
 }
 
 .header {
   background-color: #eeeeee;
+  min-height: 300px;
 }
 
 .index-logo {
   float: left;
-  margin-right: 200px;
   width: 160px;
   height: 65px;
-  margin-top: 49px;
-  margin-left: 140px;
+  margin-right: 200px;
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
 
 .header-navigation {
@@ -46,10 +47,11 @@ input {
   width: 100%;
 }
 
-.header-navigation ul {
+.header-navigation-list {
   list-style: none;
-  margin-top: 83px;
   float: left;
+  width: 640px;
+  margin-top: 83px;
   font-size: 0;
 }
 
@@ -61,7 +63,7 @@ input {
 
 .user-block {
   float: right;
-  width: 150px;
+  width: 120px;
   margin-top: 83px;
 }
 
@@ -72,66 +74,84 @@ input {
 }
 
 .slide1-panel {
-  display: block;
+  display: none;
   background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  position: relative;
-  top: 130px;
-  right: 68px;
   background-size: 698px 413px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: top 130px left 430px;
 }
 
 .slide1-description {
-
+  float: left;
 }
 
 .slide1-slogan {
-  margin-left: 140px;
+  width: 400px;
+  height: 125px;
+  margin-right: 50px;
+  margin-bottom: 30px;
 }
 
 .slide1-text {
-  margin-left: 140px;
+  width: 360px;
+  margin-bottom: 40px;
 }
 
 .slide1-btn {
-  margin-left: 140px;
+  margin-bottom: 80px;
 }
 
 .slide2-panel {
   display: none;
   background-image: url("../img/slide2.png");
+  background-size: 663px 430px;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 663px 413px;
+  position: relative;
+  background-position: top 115px left 490px;
 }
 
 .slide2-description {
   float: left;
 }
 
+.slide2-slogan {
+  width: 535px;
+  margin-bottom: 30px;
+}
+
+.slide2-text {
+  margin-bottom: 40px;
+  width: 430px;
+  margin-bottom: 40px;
+}
+
 .slide3-panel {
-  display: none;
+  display: block;
   background-image: url("../img/slide3.png");
+  background-size: 760px 410px;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 759px 411px;
+  position: relative;
+  background-position: top 175px left 400px;
+
 }
 
 .slide3-description {
   float: left;
 }
 
-.slide1-slogan {
- font-size: 55px;
- line-height:55px;
+.slide3-slogan {
+  width: 430px;
+  margin-bottom: 30px;
 }
 
-.slide2-slogan {
- font-size: 55px;
- line-height:55px;
+.slide3-text {
+  width: 360px;
+  margin-bottom: 40px;
 }
 
+.slide1-slogan,
+.slide2-slogan,
 .slide3-slogan {
  font-size: 55px;
  line-height:55px;
@@ -176,32 +196,36 @@ input {
 }
 
 .features-content-list {
+  padding: 0;
+  margin: 0;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .features-content-item {
   float: left;
   width: 300px;
-  min-height: 355px;
   margin-right: 100px;
 }
 
 .features-content-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .index-content {
-  padding-left: 170px;
-  padding-right: 170px;
+  margin-bottom: 70px;
+}
+
+.index-content-about-us {
+  float: left;
+  width: 660px;
+  height: 400px;
+  margin-right: 140px;
 }
 
 .index-content-about-us-title {
-  float: left;
   font-size: 45px;
   line-height:45px;
-  font-weight: "Medium";
-  width: 680px;
-  margin-right: 149px;
 }
 
 .index-content-statistic {
@@ -209,8 +233,40 @@ input {
   width: 360px;
 }
 
+.index-content-statistic-image {
+  margin-bottom: 35px;
+}
+
+.index-content-statistic-table-subtitle {
+  margin-bottom: 50px;
+}
+
+.table-percent {
+  font-size: 45px;
+  line-height:45px;
+  width: 110px;
+  margin-bottom: 20px;
+}
+
 .logo-site-images {
-  margin-left: 300px;
+  float: left;
+  opacity: 0.3;
+  border-top: 2px gray solid;
+  border-bottom: 2px gray solid;
+}
+
+.logo-site-images-html-academy {
+  margin-left: 30px;
+  margin-right: 95px;
+  padding-top: 60px;
+}
+
+.logo-site-images-barbershop {
+  margin-right: 100px;
+}
+
+.logo-site-images-pink {
+  margin-right: 120px;
 }
 
 .map-contacts {
